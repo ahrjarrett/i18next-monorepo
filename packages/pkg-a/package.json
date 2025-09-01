@@ -1,0 +1,11 @@
+{
+  "name": "@my-project/pkg-a",
+  "private": false,
+  "scripts": {
+    "check": "tsc -b tsconfig.json",
+    "clean": "rm -rf node_modules"
+  },
+  "dependencies": {
+    "i18next": "^25.4.2"
+  }
+}

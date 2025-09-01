@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "check": "pnpm -r --stream --parallel run check",
+    "clean": "rm -rf node_modules && pnpm -r --stream --parallel run clean"
+  },
+  "devDependencies": {
+    "typescript": "5.9.2"
+  },
+  "packageManager": "pnpm@10.14.0"
+}

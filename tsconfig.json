@@ -1,0 +1,25 @@
+{
+  "include": [],
+  "compilerOptions": {
+    "composite": true,
+    "target": "ES2022",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "moduleDetection": "force",
+    "baseUrl": ".",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "esModuleInterop": false,
+    "skipLibCheck": true,
+    "paths": {
+      "@my-project/pkg-a": ["packages/pkg-a/src/index.js"],
+      "@my-project/pkg-a/*": ["packages/pkg-a/*.js"],
+      "@my-project/pkg-b": ["packages/pkg-b/src/index.js"],
+      "@my-project/pkg-b/*": ["packages/pkg-b/*.js"]
+    },
+  },
+  "references": [
+    { "path": "packages/pkg-a" },
+    { "path": "packages/pkg-b" }
+  ]
+}
